@@ -1,0 +1,670 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Lines' inline='true' name='federated.0dt8s5h11bx8bx16y0wwn03dd4t5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Lines' name='textscan.18qmu3i0gvlt2e15vymig0cn2e4l'>
+            <connection class='textscan' directory='C:/Users/Robin/OneDrive/Blog/Network Chart in Tableau' filename='Lines.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.18qmu3i0gvlt2e15vymig0cn2e4l' name='Lines.csv' table='[Lines#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE' separator=','>
+            <column datatype='integer' name='Lines' ordinal='0' />
+            <column datatype='string' name='Node' ordinal='1' />
+            <column datatype='string' name='X' ordinal='2' />
+            <column datatype='string' name='Y' ordinal='3' />
+            <column datatype='string' name='Degree Centrality' ordinal='4' />
+            <column datatype='string' name='Betweenness Centrality' ordinal='5' />
+            <column datatype='string' name='Closeness Centrality' ordinal='6' />
+            <column datatype='string' name='Eigenvector Centrality' ordinal='7' />
+            <column datatype='string' name='Role' ordinal='8' />
+            <column datatype='integer' name='Level' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.18qmu3i0gvlt2e15vymig0cn2e4l' name='Lines.csv' table='[Lines#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE' separator=','>
+            <column datatype='integer' name='Lines' ordinal='0' />
+            <column datatype='string' name='Node' ordinal='1' />
+            <column datatype='string' name='X' ordinal='2' />
+            <column datatype='string' name='Y' ordinal='3' />
+            <column datatype='string' name='Degree Centrality' ordinal='4' />
+            <column datatype='string' name='Betweenness Centrality' ordinal='5' />
+            <column datatype='string' name='Closeness Centrality' ordinal='6' />
+            <column datatype='string' name='Eigenvector Centrality' ordinal='7' />
+            <column datatype='string' name='Role' ordinal='8' />
+            <column datatype='integer' name='Level' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lines]</local-name>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias>Lines</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Node</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Node]</local-name>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias>Node</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[X]</local-name>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias>X</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Y]</local-name>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias>Y</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Degree Centrality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Degree Centrality]</local-name>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias>Degree Centrality</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Betweenness Centrality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Betweenness Centrality]</local-name>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias>Betweenness Centrality</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closeness Centrality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Closeness Centrality]</local-name>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias>Closeness Centrality</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Eigenvector Centrality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Eigenvector Centrality]</local-name>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias>Eigenvector Centrality</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Role</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Role]</local-name>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias>Role</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Level]</local-name>
+            <parent-name>[Lines.csv]</parent-name>
+            <remote-alias>Level</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' datatype-customized='true' name='[Betweenness Centrality]' role='measure' type='quantitative' />
+      <column datatype='real' datatype-customized='true' name='[Closeness Centrality]' role='measure' type='quantitative' />
+      <column datatype='real' datatype-customized='true' name='[Degree Centrality]' role='measure' type='quantitative' />
+      <column datatype='real' datatype-customized='true' name='[Eigenvector Centrality]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Level]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Lines]' role='dimension' type='ordinal' />
+      <column datatype='real' datatype-customized='true' name='[X]' role='measure' type='quantitative' />
+      <column datatype='real' datatype-customized='true' name='[Y]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Lines.csv' datatype='table' name='[__tableau_internal_object_id__].[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/Robin/AppData/Local/Temp/TableauTemp/#TableauTemp_1bmqw1v03tcsxa1g5d3ve0yfhhln.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/29/2024 07:23:12 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Lines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Lines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lines</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Lines.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Node</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Node]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Node</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Lines.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>X</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[X]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>X</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Lines.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Y</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Lines.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Degree Centrality</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Degree Centrality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Degree Centrality</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Lines.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Betweenness Centrality</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Betweenness Centrality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Betweenness Centrality</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Lines.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Closeness Centrality</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Closeness Centrality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Closeness Centrality</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Lines.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Eigenvector Centrality</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Eigenvector Centrality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Eigenvector Centrality</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Lines.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Role</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Role]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Role</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Lines.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Level</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Level</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Lines.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Lines.csv' id='Lines.csv_6F25184269EB4F53BE79F3FB43DBB8C8'>
+            <properties context=''>
+              <relation connection='textscan.18qmu3i0gvlt2e15vymig0cn2e4l' name='Lines.csv' table='[Lines#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE' separator=','>
+                  <column datatype='integer' name='Lines' ordinal='0' />
+                  <column datatype='string' name='Node' ordinal='1' />
+                  <column datatype='string' name='X' ordinal='2' />
+                  <column datatype='string' name='Y' ordinal='3' />
+                  <column datatype='string' name='Degree Centrality' ordinal='4' />
+                  <column datatype='string' name='Betweenness Centrality' ordinal='5' />
+                  <column datatype='string' name='Closeness Centrality' ordinal='6' />
+                  <column datatype='string' name='Eigenvector Centrality' ordinal='7' />
+                  <column datatype='string' name='Role' ordinal='8' />
+                  <column datatype='integer' name='Level' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Network'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Lines' name='federated.0dt8s5h11bx8bx16y0wwn03dd4t5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0dt8s5h11bx8bx16y0wwn03dd4t5'>
+            <column aggregation='Sum' datatype='integer' name='[Level]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Lines]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Role]' role='dimension' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[X]' role='measure' type='quantitative' />
+            <column datatype='real' datatype-customized='true' name='[Y]' role='measure' type='quantitative' />
+            <column-instance column='[Level]' derivation='None' name='[none:Level:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Lines]' derivation='None' name='[none:Lines:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Role]' derivation='None' name='[none:Role:nk]' pivot='key' type='nominal' />
+            <column-instance column='[X]' derivation='None' name='[none:X:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Y]' derivation='None' name='[none:Y:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:X:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:X:qk]' scope='cols' value='false' />
+            <format attr='display' class='1' field='[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:X:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:Y:qk]' scope='rows' value='false' />
+            <format attr='render-fold-reversed' value='true' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:X:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:Role:nk]' />
+              <size column='[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:Level:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='5.0694117546081543' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:X:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <lod column='[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:Lines:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:Y:qk]</rows>
+        <cols>([federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:X:qk] + [federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:X:qk])</cols>
+      </table>
+      <simple-id uuid='{126A588F-78B1-4580-947D-D52BE797E804}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Network'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:Level:ok]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:Level:ok]</field>
+            <field>[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:Lines:ok]</field>
+            <field>[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:Role:nk]</field>
+            <field>[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:X:qk]</field>
+            <field>[federated.0dt8s5h11bx8bx16y0wwn03dd4t5].[none:Y:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0A8452CA-1B8C-49DC-BB84-9D04BD90AFB1}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Network' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
